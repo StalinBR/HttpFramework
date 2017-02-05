@@ -1,0 +1,183 @@
+[FileVersion]
+Version=7.0
+[Compiler]
+A=8
+B=0
+C=1
+D=1
+E=0
+F=0
+G=1
+H=1
+I=1
+J=0
+K=0
+L=1
+M=0
+N=1
+O=1
+P=1
+Q=0
+R=0
+S=0
+T=0
+U=0
+V=1
+W=1
+X=1
+Y=1
+Z=1
+ShowHints=1
+ShowWarnings=1
+UnitAliases=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+NamespacePrefix=
+SymbolDeprecated=1
+SymbolLibrary=1
+SymbolPlatform=1
+UnitLibrary=1
+UnitPlatform=1
+UnitDeprecated=1
+HResultCompat=1
+HidingMember=1
+HiddenVirtual=1
+Garbage=1
+BoundsError=1
+ZeroNilCompat=1
+StringConstTruncated=1
+ForLoopVarVarPar=1
+TypedConstVarPar=1
+AsgToTypedConst=1
+CaseLabelRange=1
+ForVariable=1
+ConstructingAbstract=1
+ComparisonFalse=1
+ComparisonTrue=1
+ComparingSignedUnsigned=1
+CombiningSignedUnsigned=1
+UnsupportedConstruct=1
+FileOpen=1
+FileOpenUnitSrc=1
+BadGlobalSymbol=1
+DuplicateConstructorDestructor=1
+InvalidDirective=1
+PackageNoLink=1
+PackageThreadVar=1
+ImplicitImport=1
+HPPEMITIgnored=1
+NoRetVal=1
+UseBeforeDef=1
+ForLoopVarUndef=1
+UnitNameMismatch=1
+NoCFGFileFound=1
+MessageDirective=1
+ImplicitVariants=1
+UnicodeToLocale=1
+LocaleToUnicode=1
+ImagebaseMultiple=1
+SuspiciousTypecast=1
+PrivatePropAccessor=1
+UnsafeType=0
+UnsafeCode=0
+UnsafeCast=0
+[Linker]
+MapFile=3
+OutputObjs=0
+ConsoleApp=1
+DebugInfo=0
+RemoteSymbols=0
+MinStackSize=16384
+MaxStackSize=1048576
+ImageBase=4194304
+ExeDescription=
+[Directories]
+OutputDir=D:\Projetos\Delphi 7\Teles Cabeleireiros\Aplicação
+UnitOutputDir=
+PackageDLLOutputDir=
+PackageDCPOutputDir=
+SearchPath=;C:\Program Files (x86)\Borland\Delphi7\Lib\TeeChart 2012 for Delphi 7\Delphi7\Lib;C:\Program Files (x86)\Steema Software\TeeChart 2012 for Delphi 7\Delphi7\Lib
+Packages=vcl;rtl;vclx;indy;inet;xmlrtl;vclie;inetdbbde;inetdbxpress;dbrtl;dsnap;dsnapcon;vcldb;soaprtl;VclSmp;dbexpress;dbxcds;inetdb;bdertl;vcldbx;webdsnap;websnap;adortl;ibxpress;dss;visualclx;visualdbclx;vclactnband;vclshlctrls;IntrawebDB_50_70;Intraweb_50_70;dclOfficeXP;ip4000clientvcl7;ip4000v7;fc4000v7;dxCoreD7;dxServerModeD7;cxDataD7;cxLibraryD7;dxGDIPlusD7;dxADOServerModeD7;dxDBXServerModeD7;cxEditorsD7;dxmdsD7;dxBarD7;dxBarDBNavD7;dxBarExtDBItemsD7;dxBarExtItemsD7;dxRibbonD7;cxBarEditItemD7;dxdbtrD7;dxtrmdD7;dxDockingD7;dxThemeD7;dxFlowChartD7;cxPageControlD7;dxComnD7;cxPageControldxBarPopupMenuD7;dxTabbedMDID7;dxLayoutControlD7;dxNavBarD7;dxorgcD7;dxdborD7;cxGridD7;cxExportD7;cxPivotGridD7;cxPivotGridChartD7;cxPivotGridOLAPD7;cxTreeListD7;cxTreeListdxBarPopupMenuD7;cxSchedulerD7;cxSchedulerGridD7;dcldxSkinsCoreD7;dxSkinsCoreD7;dxSkinscxPCPainterD7;dxSkinscxSchedulerPainterD7;dxSkinsdxDLPainterD7;dxSkinsdxBarPainterD7;dxSkinsdxNavBarPainterD7;dxSkinsdxRibbonPainterD7;dxSpellCheckerD7;cxSpreadSheetD7;cxVerticalGridD7;dxPSCoreD7;dxPSLnksD7;dxPScxCommonD7;dxPScxExtCommonD7;dxPScxGridLnkD7;dxPSdxLCLnkD7;dxPScxPivotGridLnkD7;dxPScxSchedulerLnkD7;dxPScxSSLnkD7;dxPScxTLLnkD7;dxPScxVGridLnkD7;dxPSdxOCLnkD7;dxPSdxDBOCLnkD7;dxPSdxDBTVLnkD7;dxPSdxFCLnkD7;dxPScxPCProdD7;dxPsPrVwAdvD7;dxPSPrVwRibbonD7;dxSkinBlackD7;dxSkinBlueD7;dxSkinCaramelD7;dxSkinCoffeeD7;dxSkinDarkRoomD7;dxSkinDarkSideD7;dxSkinFoggyD7;dxSkinGlassOceansD7;dxSkiniMaginaryD7;dxSkinLilianD7;dxSkinLiquidSkyD7;dxSkinLondonLiquidSkyD7;dxSkinMcSkinD7;dxSkinMoneyTwinsD7;dxSkinOffice2007BlackD7;dxSkinOffice2007BlueD7;dxSkinOffice2007GreenD7;dxSkinOffice2007PinkD7;dxSkinOffice2007SilverD7;dxSkinOffice2010BlackD7;dxSkinOffice2010BlueD7;dxSkinOffice2010SilverD7;dxSkinPumpkinD7;dxSkinSevenD7;dxSkinSharpD7;dxSkinSilverD7;dxSkinSpringTimeD7;dxSkinStardustD7;dxSkinSummer2008D7;dxSkinValentineD7;dxSkinXmas2008BlueD7;dxSkinBlueprintD7;dxSkinDevExpressDarkStyleD7;dxSkinDevExpressStyleD7;dxSkinHighContrastD7;dxSkinSevenClassicD7;dxSkinSharpPlusD7;dxSkinTheAsphaltWorldD7;dxSkinVS2010D7;dxSkinWhiteprintD7;dxTileControlD7;NCSPFR2;ahmdialogs_d70dcl;ahmdialogs_d70rtl;ahmemail_d70dcl;ahmemail_d70rtl;ahmenhanced_d70dcl;ahmenhanced_d70rtl;ahmfreeware_d70dcl;ahmfreeware_d70rtl;ahmmenus_d70dcl;ahmmenus_d70rtl;ahmshell_d70dcl;ahmshell_d70rtl;ahmstandard_d70dcl;ahmstandard_d70rtl;ahmsystem_d70dcl;ahmsystem_d70rtl;Rave70VCL;Rave70CLX;Tee97;TeeUI97;TeeDB97;TeePro97;TeeGL97;TeeImage97;TeeLanguage97;TeeWorld97
+Conditionals=
+DebugSourceDirs=
+UsePackages=0
+[Parameters]
+RunParams=
+HostApplication=
+Launcher=
+UseLauncher=0
+DebugCWD=
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=C:\Program Files (x86)\Borland\Delphi7\Bin\
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=2017
+MinorVer=0
+Release=0
+Build=5
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+[Version Info Keys]
+CompanyName=Teles Informática
+FileDescription=
+FileVersion=2017.0.0.5
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+[Excluded Packages]
+D:\DELPHI 7\FortesReport\FortesReport_bin_d7vcl_3.72B\RLibWinD7vcl.bpl=FortesReport VCL Library
+C:\Program Files (x86)\Developer Express Inc\CX Library\Delphi 7\Lib\dclcxLibraryVCLD7.bpl=Express Cross Platform Library (VCL Edition) by Developer Express Inc.
+C:\Program Files (x86)\Developer Express Inc\ExpressPageControl 2\Delphi 7\Lib\dclcxPageControlVCLD7.bpl=Express Cross Platform PageControl (VCL Edition) by Developer Express Inc.
+c:\program files (x86)\borland\delphi7\Bin\dcldss70.bpl=Borland Decision Cube Components
+C:\Program Files (x86)\Borland\Delphi7\Lib\Triton2002\ahmdialogs_d70dcl.bpl=AHM Dialog Components Triton 2002 Delphi 7.0 (designtime)
+C:\Program Files (x86)\Borland\Delphi7\Lib\Triton2002\ahmemail_d70dcl.bpl=AHM E-Mail Components Triton 2002 Delphi 7.0 (designtime)
+C:\Program Files (x86)\Borland\Delphi7\Lib\Triton2002\ahmenhanced_d70dcl.bpl=AHM Enhanced Components Triton 2002 Delphi 7.0 (designtime)
+C:\Program Files (x86)\Steema Software\TeeChart 2012 for Delphi 7\Delphi7\Bin\DclTee97.bpl=TeeChart 2012 Components
+C:\Program Files (x86)\Steema Software\TeeChart 2012 for Delphi 7\Delphi7\Bin\DclTeePro97.bpl=TeeChart Pro 2012 Components
+C:\Program Files (x86)\Steema Software\TeeChart 2012 for Delphi 7\Delphi7\Bin\DclTGL97.bpl=TeeChart 2012 for OpenGL
+C:\Program Files (x86)\Steema Software\TeeChart 2012 for Delphi 7\Delphi7\Bin\DclTQR97.bpl=TeeChart 2012 for QuickReport 3
+C:\Program Files (x86)\Steema Software\TeeChart 2012 for Delphi 7\Delphi7\System\TeeImage97.bpl=TeeChart Pro 2012 Graphic Formats
+C:\Program Files (x86)\Steema Software\TeeChart 2012 for Delphi 7\Delphi7\Bin\DclTree2D7Tee9.bpl=TeeTree 2 Components
+C:\Program Files (x86)\DevExpress\Library\Delphi7\dcldxPSTeeChartD7.bpl=ExpressPrinting System ReportLink for TeeChart by Developer Express Inc.
+C:\Program Files (x86)\DevExpress\Library\Delphi7\dcldxPSDBTeeChartD7.bpl=ExpressPrinting System ReportLink for DBTeeChart by Developer Express Inc.
+C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\JvMMD7D.bpl=JVCL Multimedia and Image Components
+[HistoryLists\hlUnitAliases]
+Count=1
+Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+[HistoryLists\hlSearchPath]
+Count=3
+Item0=;C:\Program Files (x86)\Borland\Delphi7\Lib\TeeChart 2012 for Delphi 7\Delphi7\Lib;C:\Program Files (x86)\Steema Software\TeeChart 2012 for Delphi 7\Delphi7\Lib
+Item1=C:\Program Files (x86)\Steema Software\TeeChart 2012 for Delphi 7\Delphi7\Lib;C:\Users\telesinfo\Desktop\Servico_Relatorios\Debug
+Item2=;C:\Program Files (x86)\Steema Software\TeeChart 2012 for Delphi 7\Delphi7\Lib
+[HistoryLists\hlOutputDirectorry]
+Count=2
+Item0=D:\Projetos\Delphi 7\Teles Cabeleireiros\Aplicação
+Item1=C:\Users\telesinfo\Desktop\Servico_Relatorios\Debug
+[Exception Log]
+EurekaLog Version=7007
+Activate=0
+atService=1
+csoDisabledRenderMethods=-2147483648
+DeleteMapAfterCompile=0
+Dialog Class=""
+dpJCL=1
+Encrypt Password=""
+loShareMM=1
+ProjectID="{30B03B7B-0789-4D29-9450-D20330C9FD93}"
+sndScreenshot=0
+sndSendInSeparatedThread=0
+sndShowFailureMsg=0
+sndShowSendDialog=0
+sndShowSuccessBugClosedOnly=0
+sndShowSuccessMsg=0
+
+
