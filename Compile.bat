@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Borland\Delphi7\Bin\DCC32.exe" -Q -B "C:\Delphi\SVIP\Testes\Testes.exe"
