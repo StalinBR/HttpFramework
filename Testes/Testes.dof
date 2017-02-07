@@ -153,3 +153,10 @@ Item0=..\bin
 [HistoryLists\hlOutputDirectorry]
 Count=1
 Item0=D:\Projetos\Delphi 7\Teles Cabeleireiros\Aplicação
+[Exception Log]
+EurekaLog Version=7007
+Activate=0
+DeleteMapAfterCompile=0
+Encrypt Password=""
+
+
