@@ -9,7 +9,6 @@ uses
 type THttpClient = class(TObject)
 private
   Furl :TURL;
-  // Teste...Fmethod  :TIdHTTPMethod;
   Frequest :TStringStream;
   Fhttp :TIdHTTP;
   Ftoken :String;
@@ -34,7 +33,8 @@ constructor THttpClient.Create(Url: TURL; token: String;
 begin
   Furl := Url;
   Frequest := request;
-  Fhttp := TIdHTTP.Create;
+  Fhttp := TIdHTTP.Create(nil
+  );
   Fhttp.Request.ContentType := 'application/json';
   Fhttp.Request.CustomHeaders.Values['Authorization'] := token;
 end;
