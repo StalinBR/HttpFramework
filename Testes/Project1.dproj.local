@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/04/07 12:51:20.000.171,=C:\Users\Samsung\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/04/17 12:54:46.311,=C:\Users\Samsung\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/04/17 12:55:05.464,D:\Projetos\SVIP\Unit1.pas=C:\Users\Samsung\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/04/17 13:00:21.477,=D:\Projetos\SVIP\Testes\URL.pas</Transaction>
+    <Transaction>2017/04/17 13:01:25.578,=D:\Projetos\SVIP\Classes\HttpClient.pas</Transaction>
+    <Transaction>2017/04/17 13:02:34.595,=D:\Projetos\SVIP\Testes\Response.pas</Transaction>
+    <Transaction>2017/04/17 13:03:47.991,D:\Projetos\SVIP\Testes\Project1.dproj=C:\Users\Samsung\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

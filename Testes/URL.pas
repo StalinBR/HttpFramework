@@ -50,7 +50,7 @@ end;
 
 function TURL.getURL: String;
 begin
-  Result := Fnamespace + 'salao/' + IntToStr(FsalaoID) + '/'+ Fmetodo + '/';
+  Result := Fnamespace + 'salao/' + IntToStr(FsalaoID) + '/'+ Fmetodo ;
 end;
 
 procedure TURL.SetAmbiente(const Value: Integer);
