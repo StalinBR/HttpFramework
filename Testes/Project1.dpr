@@ -12,9 +12,9 @@ uses
   DUnitX.Loggers.Xml.NUnit,
   DUnitX.TestFramework,
   Unit1 in '..\Unit1.pas',
-  URL in 'URL.pas',
   HttpClient in '..\Classes\HttpClient.pas',
-  Response in 'Response.pas';
+  URL in '..\Classes\URL.pas',
+  Response in '..\Classes\Response.pas';
 
 var
   runner : ITestRunner;
