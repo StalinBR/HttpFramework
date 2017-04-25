@@ -12,14 +12,13 @@ protected
 
 public
   message :String;
-  code :String;
   id :String;
   status :String;
   procedure ProcessarResposta;
   constructor Create( code :Integer; mensagem :TJSONObject );
   destructor Destroy; override;
 published
-
+  property code :Integer read Fcode write Fcode;
 end;
 
 

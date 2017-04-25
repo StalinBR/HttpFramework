@@ -20,8 +20,6 @@ type
     procedure Test200;
     [Test]
     procedure Test500;
-    [Test]
-    procedure TestMessage;
   end;
 
 implementation
@@ -46,13 +44,8 @@ end;
 
 procedure TMyTestObject.Test500;
 begin
-  response := THttpClient.Create( TURL.Create(8204, 'profisskksj') , '', nil ).Send();
+  response := THttpClient.Create( TURL.Create(8204, 'url_invalida') , '', nil ).Send();
   Assert.AreEqual(500, response.code);
-end;
-
-procedure TMyTestObject.TestMessage;
-begin
-
 end;
 
 initialization
