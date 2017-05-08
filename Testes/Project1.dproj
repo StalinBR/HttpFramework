@@ -77,7 +77,7 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="..\Unit1.pas"/>
+        <DCCReference Include="..\uTestHttpCodes.pas"/>
         <DCCReference Include="..\Classes\HttpClient.pas"/>
         <DCCReference Include="..\Classes\URL.pas"/>
         <DCCReference Include="..\Classes\Response.pas"/>

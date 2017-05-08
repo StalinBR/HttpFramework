@@ -21,3 +21,6 @@ Classes/__recovery/
 *.rar
 *.dcu
 *.xml
+*.local
+*.identcache
+*.stat

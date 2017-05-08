@@ -17,6 +17,7 @@ protected
 public
   function Send () :TResponse;
   constructor Create( Url :TURL; token :String; request :TStringStream);
+  destructor Destroy; override;
 published
 
 end;
@@ -33,10 +34,17 @@ constructor THttpClient.Create(Url: TURL; token: String;
 begin
   Furl := Url;
   Frequest := request;
-  Fhttp := TIdHTTP.Create(nil
-  );
+  Fhttp := TIdHTTP.Create(nil);
   Fhttp.Request.ContentType := 'application/json';
   Fhttp.Request.CustomHeaders.Values['Authorization'] := token;
+end;
+
+destructor THttpClient.Destroy;
+begin
+  Fhttp.Free;
+  Frequest.Free;
+  Furl.Free;
+  inherited;
 end;
 
 function THttpClient.Send: TResponse;

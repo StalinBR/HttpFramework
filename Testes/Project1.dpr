@@ -11,7 +11,7 @@ uses
   DUnitX.Loggers.Console,
   DUnitX.Loggers.Xml.NUnit,
   DUnitX.TestFramework,
-  Unit1 in '..\Unit1.pas',
+  uTestHttpCodes in '..\uTestHttpCodes.pas',
   HttpClient in '..\Classes\HttpClient.pas',
   URL in '..\Classes\URL.pas',
   Response in '..\Classes\Response.pas';
