@@ -38,13 +38,13 @@ end;
 
 procedure TMyTestObject.Test200;
 begin
-  response := THttpClient.Create( TURL.Create(8204, 'profissionais') , '', nil ).Send();
+  response := THttpClient.Create( TURL.Create(8204, 'profissionais') , '', nil ).Get();
   Assert.AreEqual(200, response.code);
 end;
 
 procedure TMyTestObject.Test500;
 begin
-  response := THttpClient.Create( TURL.Create(8204, 'url_invalida') , '', nil ).Send();
+  response := THttpClient.Create( TURL.Create(8204, 'url_invalida') , '', nil ).Get();
   Assert.AreEqual(500, response.code);
 end;
 
