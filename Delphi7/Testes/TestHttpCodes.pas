@@ -59,22 +59,20 @@ end;
 
 procedure TTestHttpCodes.Test200;
 begin
-  response := THttpClient.Create( TURL.Create(8204, 'profissionais') , '', nil ).Get();
+  response := THttpClient.Create( TURL.Create(8204, 'profissionais') , mtGet, '', TStringStream.Create('') ).Execute;
   CheckEquals(200, response.code);
 end;
 
 procedure TTestHttpCodes.Test500;
 begin
-  response := THttpClient.Create( TURL.Create(8204, 'url_invalida') , '', nil ).Get();
+  response := THttpClient.Create( TURL.Create(8204, 'url_invalida') , mtGet, '', TStringStream.Create('') ).Execute;
   CheckEquals(500, response.code);
 end;
 
 procedure TTestHttpCodes.TestDelete;
 begin
-  client := THttpClient.Create(TURL.Create(8204, 'url_invalida') , 'TOKEN_HOMOLOG', TStringStream.Create('') );
-  response := client.Delete();
+  response := THttpClient.Create(TURL.Create(8204, 'url_invalida') , mtDelete, 'TOKEN_HOMOLOG', TStringStream.Create('')).Execute ;
   CheckEquals(500, response.parseCode);
-  GravaLog( client.ToString ); 
   //CheckEquals(500, response.code);
 end;
 
