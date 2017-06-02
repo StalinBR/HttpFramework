@@ -2,19 +2,23 @@ unit URL;
 
 interface
 
+type TEndpoint = ( epConsultaTransacoes, epTransacao,
+                   epConsultaProfissionais, epProfissional  );
+
 type TURL = class(TObject)
 private
   Furl :String;
   Fnamespace :String;
   Fambiente :Integer;
   FsalaoID :Integer;
-  Fmetodo :String;
+  Fmetodo :TEndpoint;
   procedure SetAmbiente(const Value: Integer);
+  function getEndpoint( Fmetodo :TEndpoint ) :String;
 protected
 
 public
   function getURL :String;
-  constructor Create(salaoID :Integer; metodo :String);
+  constructor Create(salaoID :Integer; metodo :TEndpoint);
   destructor Destroy; override;
 published
 
@@ -31,7 +35,7 @@ uses SysUtils;
 
 { TURL }
 
-constructor TURL.Create(salaoID: Integer; metodo: String);
+constructor TURL.Create(salaoID: Integer; metodo: TEndpoint);
 var
   lambiente :Integer;
 begin
@@ -48,9 +52,22 @@ begin
   inherited;
 end;
 
+function TURL.getEndpoint(Fmetodo: TEndpoint): String;
+begin
+  case Fmetodo of
+
+    epConsultaTransacoes    : Result := '/gopague/transacoes';
+    epTransacao             : Result := '/gopague/transacoes/';
+    epConsultaProfissionais : Result := '/profissionais';
+    epProfissional          : Result := '/profissional/';
+
+  end;
+
+end;
+
 function TURL.getURL: String;
 begin
-  Result := Fnamespace + 'salao/' + IntToStr(FsalaoID) + '/'+ Fmetodo ;
+  Result := Fnamespace + 'salao/' + IntToStr(FsalaoID) + getEndpoint(Fmetodo) ;
 end;
 
 procedure TURL.SetAmbiente(const Value: Integer);

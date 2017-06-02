@@ -17,7 +17,6 @@ type
   published
     procedure Test200;
     procedure Test500;
-    procedure TestDelete;
   end;
 
 
@@ -36,7 +35,7 @@ begin
   if FileExists(NomeDoLog) then
     Append(Arquivo)
   else
-    ReWrite(Arquivo); 
+    ReWrite(Arquivo);
   try
     Writeln( arquivo, DateTimeToStr(Now) + ' - ' + log );
   finally
@@ -59,21 +58,14 @@ end;
 
 procedure TTestHttpCodes.Test200;
 begin
-  response := THttpClient.Create( TURL.Create(8204, 'profissionais') , mtGet, '', TStringStream.Create('') ).Execute;
+  response := THttpClient.Create( TURL.Create(8204, epConsultaProfissionais ) , mtGet, '', TStringStream.Create('') ).Execute;
   CheckEquals(200, response.code);
 end;
 
 procedure TTestHttpCodes.Test500;
 begin
-  response := THttpClient.Create( TURL.Create(8204, 'url_invalida') , mtGet, '', TStringStream.Create('') ).Execute;
+  response := THttpClient.Create(TURL.Create(8204, epConsultaTransacoes) , mtDelete, 'TOKEN_HOMOLOG', TStringStream.Create('')).Execute ;
   CheckEquals(500, response.code);
-end;
-
-procedure TTestHttpCodes.TestDelete;
-begin
-  response := THttpClient.Create(TURL.Create(8204, 'url_invalida') , mtDelete, 'TOKEN_HOMOLOG', TStringStream.Create('')).Execute ;
-  CheckEquals(500, response.parseCode);
-  //CheckEquals(500, response.code);
 end;
 
 initialization
