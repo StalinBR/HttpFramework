@@ -10,7 +10,6 @@ type
   private
     client :THttpClient;
     response :TResponse;
-    procedure GravaLog(log :String);
   protected
     procedure SetUp; override;
     procedure TearDown; override;
@@ -23,25 +22,6 @@ type
 implementation
 
 { TTestHttpCodes }
-
-procedure TTestHttpCodes.GravaLog(log: String);
-var
-  data, NomeDoLog: string;
-  Arquivo: TextFile;
-begin
-  data := IntToStr(DayOf(Now)) + IntToStr(MonthOf(Now)) + IntToStr(YearOf(Now));
-  NomeDoLog := ExtractFileDir(ParamStr(0)) +'\LogSalaoVIP' + data + '.txt';
-  AssignFile(Arquivo, NomeDoLog);
-  if FileExists(NomeDoLog) then
-    Append(Arquivo)
-  else
-    ReWrite(Arquivo);
-  try
-    Writeln( arquivo, DateTimeToStr(Now) + ' - ' + log );
-  finally
-    CloseFile(arquivo)
-  end;
-end;
 
 procedure TTestHttpCodes.SetUp;
 begin
