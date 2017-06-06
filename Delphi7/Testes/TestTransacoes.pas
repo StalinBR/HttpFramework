@@ -16,6 +16,7 @@ type TTestTransacoes = class(TtestCase)
     procedure SetUp; override;
     procedure TearDown; override;
   published
+    procedure TestMessage;
     procedure TestParse;
     procedure TestSalvar;
   end;
@@ -40,12 +41,17 @@ begin
 
 end;
 
+procedure TTestTransacoes.TestMessage;
+begin
+  response := THttpClient.Create( TURL.Create(7083, epTransacao, '0' ) , mtGet, token, TStringStream.Create('') ).Execute;
+  CheckEquals( 'Recurso não encontrado', response.parseMessage );
+end;
+
 procedure TTestTransacoes.TestParse;
 var
   transacao :TransacaoGoPague;
 begin
   response := THttpClient.Create( TURL.Create(7083, epTransacao, '2611238' ) , mtGet, token, TStringStream.Create('') ).Execute;
-
   transacao := TransacaoGoPague.parseFromJson( response.Fmensagem.Field['data'].Field['transaction'] as TlkJSONobject );
   CheckNotEquals( '0', transacao.gopague_id );
 end;

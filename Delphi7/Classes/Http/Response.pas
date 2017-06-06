@@ -12,6 +12,7 @@ public
   Fcode :Integer;
   Fmensagem :TlkJSONobject;
   function parseCode :Integer;
+  function parseMessage :String;
   constructor Create( code :Integer; mensagem :TlkJSONobject );
   destructor Destroy; override;
 published
@@ -41,6 +42,18 @@ var
 begin
   TryStrToInt( Fmensagem.Field['code'].Value, code );
   Result := code;
+end;
+
+function TResponse.parseMessage: String;
+var
+ mensagem :String;
+begin
+  try
+    mensagem := Fmensagem.Field['message'].Value;
+  except
+    mensagem := 'Erro não identificado';
+  end;
+  Result := mensagem;
 end;
 
 end.

@@ -106,7 +106,8 @@ begin
     Result := TResponse.Create( Fhttp.ResponseCode, ljson );
   except on E :Exception do
    begin
-     ljson.Add('Exception', E.Message);
+     ljson.Add('code', 500);
+     ljson.Add('message', 'Exception: ' + E.Message);
      Result := TResponse.Create( 500,  ljson );
    end;
   end;
