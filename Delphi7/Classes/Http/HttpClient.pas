@@ -4,13 +4,13 @@ interface
 
 uses
   Classes, uLkJSON, SysUtils,
-  URL, IdHTTP, Response;
+  IURL, IdHTTP, Response;
 
 type TMethod = ( mtGet, mtPost, mtPut, mtDelete );
 
 type THttpClient = class(TObject)
 private
-  Furl :TURL;
+  Furl :IUrls;
   Fmethod :TMethod;
   Frequest :TStringStream;
   Fresponse :TStringStream;
@@ -26,7 +26,7 @@ protected
 public
   function Execute :Tresponse;
   function ToString :String;
-  constructor Create( Url :TURL; method :TMethod; token :String; request :TStringStream);
+  constructor Create( Url :IUrls; method :TMethod; token :String; request :TStringStream);
   destructor Destroy; override;
 published
 
@@ -39,7 +39,7 @@ uses Math;
 
 { THttpClient }
 
-constructor THttpClient.Create(Url: TURL; method :TMethod; token: String;
+constructor THttpClient.Create(Url: IUrls; method :TMethod; token: String;
   request: TStringStream);
 begin
   Furl := Url;
@@ -78,7 +78,7 @@ begin
   Fhttp.Free;
   Frequest.Free;
   Fresponse.Free;
-  Furl.Free;
+  //Furl.Free;
   inherited;
 end;
 

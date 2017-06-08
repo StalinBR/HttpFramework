@@ -12,7 +12,8 @@ uses
   TrasancaoGoPague in '..\..\..\Delphi 7\Teles Cabeleireiros\Aplicação\SVIP\Classes\TrasancaoGoPague.pas',
   uTransacoesDAO in '..\Classes\DAO\uTransacoesDAO.pas',
   uDAO in '..\Classes\DAO\uDAO.pas',
-  TestTransacoes in 'TestTransacoes.pas';
+  TestTransacoes in 'TestTransacoes.pas',
+  IURL in '..\Interfaces\IURL.pas';
 
 {$R *.res}
 

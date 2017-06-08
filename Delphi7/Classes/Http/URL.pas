@@ -2,10 +2,12 @@ unit URL;
 
 interface
 
+uses IURL;
+
 type TEndpoint = ( epConsultaTransacoes, epTransacao,
                    epConsultaProfissionais, epProfissional  );
 
-type TURL = class(TObject)
+type TURL = class(TInterfacedObject, IUrls)
 private
   Furl :String;
   Fnamespace :String;
